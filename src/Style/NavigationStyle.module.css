@@ -1,37 +1,22 @@
 .navigation {
   position: absolute;
-  display: grid;
-  grid-template-areas: ".  name home about contact shopping-cart";
-  grid-template-columns: 4fr 5fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   color: antiquewhite;
+  z-index: 1;
 }
 
-.webSiteName,
+.navigationButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
 .homeButton,
 .aboutButton,
 .contactButton,
 .shoppingCartButton {
   justify-content: center;
   align-content: center;
-}
-
-.webSiteName {
-  grid-area: name;
-  text-align: center;
-}
-.homeButton {
-  grid-area: home;
-}
-
-.aboutButton {
-  grid-area: about;
-}
-
-.contactButton {
-  grid-area: contact;
-}
-
-.shoppingCartButton {
-  grid-area: shopping-cart;
 }

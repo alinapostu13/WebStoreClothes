@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Luxury"; /*a name to be used later*/
+  src: url("../src/Fonts/modernline.otf"); /*URL to font*/
+
+  font-family: "Luxury-2";
+  src: url("../src//Fonts/Phitagate-Regular.otf");
+}

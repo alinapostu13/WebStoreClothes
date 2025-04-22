@@ -14,7 +14,7 @@ const TShirt = ({ data }: Props): React.JSX.Element => {
       <img
         src={data.Image}
         alt="No image found "
-        style={{ width: "10rem", margin: "1rem" }}
+        style={{ width: "10rem", height: "15rem", margin: "1rem" }}
       />
 
       <div className={clothingStyle.productInformation}>{data.Price}$</div>

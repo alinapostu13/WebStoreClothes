@@ -3,14 +3,16 @@ import HomeButton from "./NavigationComponents/Home";
 import AboutButton from "./NavigationComponents/About";
 import ContactButton from "./NavigationComponents/Contact";
 import ShoppingCart from "./NavigationComponents/ShoppingCart";
+
 function NavigationBar() {
   return (
     <div className={navigationStyle["navigation"]}>
-      <h1 className={navigationStyle["webSiteName"]}>Snappy Threads</h1>
-      <HomeButton />
-      <AboutButton />
-      <ContactButton />
-      <ShoppingCart />
+      <div className={navigationStyle["navigationButtons"]}>
+        <HomeButton />
+        <AboutButton />
+        <ContactButton />
+        <ShoppingCart />
+      </div>
     </div>
   );
 }

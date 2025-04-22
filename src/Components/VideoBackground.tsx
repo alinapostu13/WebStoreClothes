@@ -8,6 +8,10 @@ const BackgroundVideo = () => {
         <source src="Presentation.mp4" type="video/mp4" />
       </video>
       <NavigationBar />
+      <div className={videoStyle["content"]}>
+        <h1 className={videoStyle["webSiteName"]}>Élan Noire</h1>
+        <p className={videoStyle["motto"]}>Born from moonlight and memory.</p>
+      </div>
     </div>
   );
 };
