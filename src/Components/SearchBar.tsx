@@ -5,9 +5,13 @@ import searchBarStyle from "../Style/SeacrhBar.module.css";
 function SearcBar() {
   return (
     <div className={mainViewStyle["search-bar"]}>
-      <button>Categories</button>
-      <button>Products</button>
-      <input type="search" placeholder="Search..." />
+      <button style={{ flexGrow: "1" }}>Categories</button>
+      <button style={{ flexGrow: "1" }}>Products</button>
+      <input
+        type="search"
+        placeholder="🔍 Search..."
+        style={{ flexGrow: "5" }}
+      />
     </div>
   );
 }

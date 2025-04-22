@@ -1,10 +1,9 @@
-import React from "react";
-import mainViewStyle from "../../Style/MainView.module.css";
+import navigationStyle from "../../Style/NavigationStyle.module.css";
 import buttonStyle from "../../Style/ButtonsStyle.module.css";
 
 function HomeButton() {
   return (
-    <div className={mainViewStyle["home-section"]}>
+    <div className={navigationStyle["homeButton"]}>
       <button className={buttonStyle["navigation-bar-buttons"]}>Home</button>
     </div>
   );

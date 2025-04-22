@@ -1,0 +1,35 @@
+.navigation {
+  display: grid;
+  grid-template-areas: ".  name home about contact shopping-cart";
+  grid-template-columns: 4fr 5fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.webSiteName,
+.homeButton,
+.aboutButton,
+.contactButton,
+.shoppingCartButton {
+  justify-content: center;
+  align-content: center;
+}
+
+.webSiteName {
+  grid-area: name;
+  text-align: center;
+}
+.homeButton {
+  grid-area: home;
+}
+
+.aboutButton {
+  grid-area: about;
+}
+
+.contactButton {
+  grid-area: contact;
+}
+
+.shoppingCartButton {
+  grid-area: shopping-cart;
+}
