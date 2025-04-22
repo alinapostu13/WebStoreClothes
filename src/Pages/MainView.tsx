@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import mainViewStyle from "../Style/MainView.module.css";
 import NavigationBar from "../Components/NavigationBar";
 import ContentSide from "../Components/Content";
