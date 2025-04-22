@@ -1,14 +1,13 @@
-import React from "react";
 import mainViewStyle from "../Style/MainView.module.css";
-import NavigationBar from "../Components/NavigationBar";
 import ContentSide from "../Components/Content";
 import SearcBar from "../Components/SearchBar";
 import FooterSide from "../Components/Footer";
+import BackgroundVideo from "../Components/VideoBackground";
 
 function MainView() {
   return (
     <div className={mainViewStyle["container"]}>
-      <NavigationBar />
+      <BackgroundVideo />
       <SearcBar />
       <ContentSide />
       <FooterSide />

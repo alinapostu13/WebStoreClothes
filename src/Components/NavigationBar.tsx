@@ -1,4 +1,3 @@
-import React from "react";
 import navigationStyle from "../Style/NavigationStyle.module.css";
 import HomeButton from "./NavigationComponents/Home";
 import AboutButton from "./NavigationComponents/About";

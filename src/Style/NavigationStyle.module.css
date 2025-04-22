@@ -1,8 +1,10 @@
 .navigation {
+  position: absolute;
   display: grid;
   grid-template-areas: ".  name home about contact shopping-cart";
   grid-template-columns: 4fr 5fr 1fr 1fr 1fr 1fr;
   width: 100%;
+  color: antiquewhite;
 }
 
 .webSiteName,

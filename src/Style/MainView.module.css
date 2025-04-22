@@ -29,8 +29,7 @@ body {
 }
 
 .content-section {
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin: 0 3rem;
   display: flex;
 }
 
