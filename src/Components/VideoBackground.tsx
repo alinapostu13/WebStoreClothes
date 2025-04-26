@@ -11,6 +11,7 @@ const BackgroundVideo = () => {
       <div className={videoStyle["content"]}>
         <h1 className={videoStyle["webSiteName"]}>Élan Noire</h1>
         <p className={videoStyle["motto"]}>Born from moonlight and memory.</p>
+        <button className={videoStyle["scroll-more"]}>Scroll for more </button>
       </div>
     </div>
   );
