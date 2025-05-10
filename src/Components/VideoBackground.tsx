@@ -2,15 +2,16 @@ import videoStyle from "../Style/BackgroundVideo.module.css";
 
 type BackgroundVideoProps = {
   scrollTo: React.RefObject<HTMLDivElement | null>;
+  topRef: React.RefObject<HTMLDivElement | null>;
 };
 
-const BackgroundVideo = ({ scrollTo }: BackgroundVideoProps) => {
+const BackgroundVideo = ({ scrollTo, topRef }: BackgroundVideoProps) => {
   const onClickHandle = () => {
     scrollTo.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className={videoStyle["videoContainer"]}>
+    <div className={videoStyle["videoContainer"]} ref={topRef}>
       <video autoPlay muted loop className="background-video">
         <source src="Presentation.mp4" type="video/mp4" />
       </video>
