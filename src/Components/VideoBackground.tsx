@@ -1,6 +1,14 @@
 import videoStyle from "../Style/BackgroundVideo.module.css";
 
-const BackgroundVideo = () => {
+type BackgroundVideoProps = {
+  scrollTo: React.RefObject<HTMLDivElement | null>;
+};
+
+const BackgroundVideo = ({ scrollTo }: BackgroundVideoProps) => {
+  const onClickHandle = () => {
+    scrollTo.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className={videoStyle["videoContainer"]}>
       <video autoPlay muted loop className="background-video">
@@ -9,7 +17,9 @@ const BackgroundVideo = () => {
       <div className={videoStyle["content"]}>
         <h1 className={videoStyle["webSiteName"]}>Élan Noire</h1>
         <p className={videoStyle["motto"]}>Born from moonlight and memory.</p>
-        <button className={videoStyle["scroll-more"]}>Scroll for more </button>
+        <button className={videoStyle["scroll-more"]} onClick={onClickHandle}>
+          Discover more
+        </button>
       </div>
     </div>
   );

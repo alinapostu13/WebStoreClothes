@@ -18,4 +18,5 @@
   margin: 10px;
   width: 100px;
   cursor: pointer;
+  align-self: center;
 }

@@ -43,6 +43,8 @@
 }
 
 .scroll-more {
+  position: absolute;
+  bottom: 10vh;
   background-color: transparent;
   border-radius: 20px;
   height: 4rem;

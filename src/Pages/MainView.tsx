@@ -4,14 +4,17 @@ import SearcBar from "../Components/SearchBar";
 import FooterSide from "../Components/Footer";
 import BackgroundVideo from "../Components/VideoBackground";
 import NavigationBar from "../Components/NavigationBar";
+import { useRef } from "react";
 
 function MainView() {
+  const targetRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className={mainViewStyle["container"]}>
-      <BackgroundVideo />
+      <BackgroundVideo scrollTo={targetRef} />
       <NavigationBar />
       <SearcBar />
-      <ContentSide />
+      <ContentSide ref={targetRef} />
       <FooterSide />
     </div>
   );

@@ -10,7 +10,8 @@
 .navigationButtons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-top: 1.8rem;
 }
 
 .homeButton,
@@ -19,4 +20,11 @@
 .shoppingCartButton {
   justify-content: center;
   align-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 70px;
 }
