@@ -6,7 +6,7 @@ type Props = {
   data: ContentData;
 };
 
-const TShirt = ({ data }: Props): React.JSX.Element => {
+const Product = ({ data }: Props): React.JSX.Element => {
   return (
     <div className={clothingStyle.container}>
       <div className={clothingStyle.productInformation}>{data.Name}</div>
@@ -39,4 +39,4 @@ const TShirt = ({ data }: Props): React.JSX.Element => {
     </div>
   );
 };
-export default TShirt;
+export default Product;

@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-import homePageStyle from "../Style/HomePage.module.css";
-import ContentSide from "../Components/Content";
-import SearcBar from "../Components/SearchBar";
+import layoutStyle from "../Style/Layout.module.css";
 import FooterSide from "../Components/Footer";
 import HomePageBackgroundVideo from "../Components/VideoBackgrounds/HomePageVideo";
 import NavigationBar from "../Components/NavigationBar";
@@ -35,15 +32,13 @@ function HomePage() {
   });
 
   return (
-    <div className={homePageStyle["container"]}>
+    <div className={layoutStyle["container"]}>
       <HomePageBackgroundVideo
         scrollTo={contentRef}
         topRef={topSectionRef}
         videoTitle="Presentation.mp4"
       />
       <NavigationBar />
-      <SearcBar />
-      <ContentSide ref={contentRef} />
       <FooterSide />
       {!isInView && <GoToTopButton contetRef={topSectionRef} />}
     </div>

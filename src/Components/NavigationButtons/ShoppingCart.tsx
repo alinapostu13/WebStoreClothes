@@ -6,7 +6,7 @@ function ShoppingCart() {
   return (
     <div className={navigationStyle["shoppingCartButton"]}>
       <button className={buttonStyle["navigation-bar-buttons"]}>
-        <img style={{ width: "30px" }} src={Logo} />
+        <img style={{ width: "30px" }} src={Logo} alt="No image found" />
       </button>
     </div>
   );

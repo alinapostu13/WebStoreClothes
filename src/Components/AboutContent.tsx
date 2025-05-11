@@ -1,4 +1,4 @@
-import aboutPageStyle from "../Style/AboutPage.module.css";
+import aboutPageStyle from "../Style/Pages/AboutPage.module.css";
 import FounderPicture from "../Images/Founder.png";
 import Signature from "../Images/signature.png";
 function AboutContent() {
@@ -9,6 +9,7 @@ function AboutContent() {
           <div className={aboutPageStyle["founder-and-signrature"]}>
             <img
               src={FounderPicture}
+              alt="No image found"
               style={{ width: "20vw", borderRadius: "20px" }}
             />
             <img src={Signature} style={{ width: " 10vw" }} />

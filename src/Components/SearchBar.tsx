@@ -1,5 +1,5 @@
 import React from "react";
-import homePageStyle from "../Style/HomePage.module.css";
+import homePageStyle from "../Style/Pages/HomePage.module.css";
 function SearcBar() {
   return (
     <div className={homePageStyle["search-bar"]}>

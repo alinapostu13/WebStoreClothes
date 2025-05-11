@@ -17,7 +17,8 @@
 .homeButton,
 .aboutButton,
 .contactButton,
-.shoppingCartButton {
+.shoppingCartButton,
+.shop {
   justify-content: center;
   align-content: center;
 }

@@ -1,14 +1,13 @@
-import React from "react";
 import NavigationBar from "../Components/NavigationBar";
 import FooterSide from "../Components/Footer";
 import AboutPageVideo from "../Components/VideoBackgrounds/AboutPageVideo";
 
-import aboutpageStyle from "../Style/AboutPage.module.css";
+import layoutStyle from "../Style/Layout.module.css";
 import AboutContent from "../Components/AboutContent";
 
 function AboutPage() {
   return (
-    <div className={aboutpageStyle["container"]}>
+    <div className={layoutStyle["container"]}>
       <AboutPageVideo />
       <NavigationBar />
       <AboutContent />

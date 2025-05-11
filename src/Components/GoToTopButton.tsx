@@ -22,7 +22,7 @@ function GoToTopButton({ contetRef }: GoToTopButtonProps) {
         cursor: "pointer",
       }}
     >
-      <img src={UpArrow} width={70} />
+      <img src={UpArrow} width={70} alt="No image found" />
       <p>Go to top</p>
     </button>
   );
