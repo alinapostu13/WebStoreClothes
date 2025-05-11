@@ -7,7 +7,7 @@ import NavigationBar from "../Components/NavigationBar";
 import { useEffect, useRef, useState } from "react";
 import GoToTopButton from "../Components/GoToTopButton";
 
-function MainView() {
+function HomePage() {
   const contentRef = useRef<HTMLDivElement>(null);
   const topSectionRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
@@ -45,4 +45,4 @@ function MainView() {
   );
 }
 
-export default MainView;
+export default HomePage;

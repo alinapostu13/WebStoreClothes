@@ -1,12 +1,11 @@
-import React from "react";
 import NavigationBar from "../Components/NavigationBar";
 
-function AboutPage() {
+const ContactPage = (): React.JSX.Element => {
   return (
     <div>
       <NavigationBar />
     </div>
   );
-}
+};
 
-export default AboutPage;
+export default ContactPage;
