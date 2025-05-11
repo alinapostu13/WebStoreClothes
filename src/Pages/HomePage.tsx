@@ -1,10 +1,11 @@
-import mainViewStyle from "../Style/MainView.module.css";
+import { useEffect, useRef, useState } from "react";
+
+import homePageStyle from "../Style/HomePage.module.css";
 import ContentSide from "../Components/Content";
 import SearcBar from "../Components/SearchBar";
 import FooterSide from "../Components/Footer";
-import BackgroundVideo from "../Components/VideoBackground";
+import HomePageBackgroundVideo from "../Components/VideoBackgrounds/HomePageVideo";
 import NavigationBar from "../Components/NavigationBar";
-import { useEffect, useRef, useState } from "react";
 import GoToTopButton from "../Components/GoToTopButton";
 
 function HomePage() {
@@ -34,8 +35,12 @@ function HomePage() {
   });
 
   return (
-    <div className={mainViewStyle["container"]}>
-      <BackgroundVideo scrollTo={contentRef} topRef={topSectionRef} />
+    <div className={homePageStyle["container"]}>
+      <HomePageBackgroundVideo
+        scrollTo={contentRef}
+        topRef={topSectionRef}
+        videoTitle="Presentation.mp4"
+      />
       <NavigationBar />
       <SearcBar />
       <ContentSide ref={contentRef} />

@@ -1,10 +1,8 @@
 import React from "react";
-import mainViewStyle from "../Style/MainView.module.css";
-import searchBarStyle from "../Style/SeacrhBar.module.css";
-
+import homePageStyle from "../Style/HomePage.module.css";
 function SearcBar() {
   return (
-    <div className={mainViewStyle["search-bar"]}>
+    <div className={homePageStyle["search-bar"]}>
       <button style={{ flexGrow: "1" }}>Categories</button>
       <button style={{ flexGrow: "1" }}>Products</button>
       <input
