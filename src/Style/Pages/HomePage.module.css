@@ -12,6 +12,10 @@
   gap: 5rem;
 }
 
+.our-story {
+  margin-top: 4rem;
+}
+
 .studio-pictures {
   display: flex;
   flex-direction: row;
@@ -52,10 +56,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(207, 188, 163, 0.445);
-  color: rgb(255, 255, 255);
+  background-color: rgba(105, 102, 99, 0.4);
+  color: blanchedalmond;
   font-size: 24px;
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 0.8rem;
+}
+
+.button:hover {
+  transform: scale(1.05) rotate(2deg);
+  background-color: antiquewhite;
 }
