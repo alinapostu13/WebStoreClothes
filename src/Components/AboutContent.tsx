@@ -44,8 +44,8 @@ function AboutContent() {
             Whether you seek the perfect suit for a pivotal moment or everyday
             pieces that quietly define your presence, we are here to guide you.
             With discretion, with care, and always with an eye for the
-            extraordinary hidden in the understated. Welcome to [Store
-            Name]—where character is stitched into every seam.
+            extraordinary hidden in the understated. Welcome to Elan Noire
+            —where character is stitched into every seam.
             <br />
           </p>
         </div>

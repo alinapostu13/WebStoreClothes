@@ -9,7 +9,7 @@ function HomeButton() {
       <button
         className={buttonStyle["navigation-bar-buttons"]}
         onClick={() => {
-          navigate("/home");
+          navigate("/");
         }}
       >
         Home

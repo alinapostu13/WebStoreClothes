@@ -4,6 +4,7 @@ import FooterSide from "../Components/Footer";
 import HomePageBackgroundVideo from "../Components/VideoBackgrounds/HomePageVideo";
 import NavigationBar from "../Components/NavigationBar";
 import GoToTopButton from "../Components/GoToTopButton";
+import Content from "../Components/HomePage/Content";
 
 function HomePage() {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -33,12 +34,9 @@ function HomePage() {
 
   return (
     <div className={layoutStyle["container"]}>
-      <HomePageBackgroundVideo
-        scrollTo={contentRef}
-        topRef={topSectionRef}
-        videoTitle="Presentation.mp4"
-      />
+      <HomePageBackgroundVideo scrollTo={contentRef} topRef={topSectionRef} />
       <NavigationBar />
+      <Content />
       <FooterSide />
       {!isInView && <GoToTopButton contetRef={topSectionRef} />}
     </div>
